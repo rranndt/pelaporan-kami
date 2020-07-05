@@ -1,0 +1,5 @@
+git init
+git remote add origin https://github.com/AnanditaRian19/pelaporan-kami.git
+git add .           (di add semua filenya)
+git commit -m "Ini adalah pesan commit pertama saya"
+git push -u origin master      (master = brach)
