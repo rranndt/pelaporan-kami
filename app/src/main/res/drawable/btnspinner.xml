@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke
+        android:width="1dp"
+        android:color="#f7f7f7" />
+    <gradient android:angle="225" />
+    <item android:background="?attr/selectableItemBackground" />
+    <corners
+        android:bottomLeftRadius="5dp"
+        android:bottomRightRadius="5dp"
+        android:topLeftRadius="5dp"
+        android:topRightRadius="5dp" />
+    <item
+        android:drawable="@drawable/gradient_button"
+        android:state_focused="true"
+        android:state_pressed="true" />
+    <item
+        android:drawable="@drawable/gradient_button"
+        android:state_focused="false"
+        android:state_pressed="true" />
+
+</shape>

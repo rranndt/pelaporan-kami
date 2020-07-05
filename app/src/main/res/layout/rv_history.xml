@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rvRoot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.github.florent37.shapeofview.shapes.RoundRectView
+            android:id="@+id/rrv"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginEnd="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:elevation="4dp"
+            app:shape_roundRect_borderColor="@android:color/transparent"
+            app:shape_roundRect_borderWidth="1dp"
+            app:shape_roundRect_bottomLeftRadius="10dp"
+            app:shape_roundRect_bottomRightRadius="10dp"
+            app:shape_roundRect_topLeftRadius="10dp"
+            app:shape_roundRect_topRightRadius="10dp">
+
+            <ImageView
+                android:id="@+id/ivImg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_launcher" />
+
+        </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+        <!--<TextView
+            android:id="@+id/pelapor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_toEndOf="@+id/rrv"
+            android:fontFamily="@font/abaya"
+            android:hint="Pelapor :"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+            android:textSize="16sp" />-->
+
+        <!--<TextView
+            android:id="@+id/tvPelapor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pelapor"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_toEndOf="@+id/rrv"
+            android:fontFamily="@font/abaya"
+            android:hint="-"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />-->
+
+        <TextView
+            android:id="@+id/jenis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_toEndOf="@+id/rrv"
+            android:fontFamily="@font/abaya"
+            android:hint="Kategori :"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvJenis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/jenis"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_toEndOf="@+id/rrv"
+            android:fontFamily="@font/abaya"
+            android:hint="-"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvJenis"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_toEndOf="@+id/rrv"
+            android:ellipsize="end"
+            android:fontFamily="@font/abaya"
+            android:hint="Detail Kejadian :"
+            android:maxLines="2"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/detail"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_toEndOf="@+id/rrv"
+            android:ellipsize="end"
+            android:fontFamily="@font/abaya"
+            android:hint="-"
+            android:maxLines="3"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- <TextView
+            android:id="@+id/tvAlamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvDetail"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_toEndOf="@+id/ivImg"
+            android:ellipsize="end"
+            android:fontFamily="@font/abaya"
+            android:hint="Alamat"
+            android:maxLines="2"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" /> -->
+
+        <TextView
+            android:id="@+id/tindakan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvDetail"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_toEndOf="@+id/rrv"
+            android:fontFamily="@font/abaya"
+            android:hint="Tindak Lanjut :"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvAksi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tindakan"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_toEndOf="@+id/rrv"
+            android:fontFamily="@font/abaya"
+            android:hint="-"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/rrv"
+            android:background="@android:color/black" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

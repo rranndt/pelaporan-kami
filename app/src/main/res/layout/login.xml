@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rootLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/ivPetugas"
+                android:layout_gravity="end"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_marginEnd="@dimen/_6sdp"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:src="@drawable/iconsperson" />
+
+        </LinearLayout> -->
+
+        <ImageView
+            android:id="@+id/iv_bandung"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/kota_bandung" />
+
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_bandung"
+            android:fontFamily="@font/lambo"
+            android:gravity="center"
+            android:text="@string/selamat_datang"
+            android:textColor="@color/white"
+            android:textSize="48sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_1"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/abaya"
+            android:gravity="center"
+            android:text="Wujudkan Lingkungan Asri dan Nyaman"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/LogRegLabel"
+                app:hintAnimationEnabled="false"
+                app:hintEnabled="false">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/formlogreg"
+                    android:drawableStart="@drawable/user"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:hint="@string/username"
+                    android:inputType="text"
+                    android:padding="15dp"
+                    android:textColor="@color/blueDark"
+                    android:textColorHint="@color/blueDark"
+                    android:textSize="14sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:theme="@style/LogRegLabel"
+                app:hintAnimationEnabled="false"
+                app:hintEnabled="false"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/blueDark">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/formlogreg2"
+                    android:drawableStart="@drawable/lock"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:padding="15dp"
+                    android:textColor="@color/blueDark"
+                    android:textColorHint="@color/blueDark"
+                    android:textSize="14sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/lupapassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/basic_regular"
+                android:gravity="end"
+                android:layout_marginEnd="@dimen/_25sdp"
+                android:paddingBottom="10dp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="@string/lupa_password"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp" />
+
+            <Button
+                android:id="@+id/signin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="130dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/btnframe"
+                android:fontFamily="fonts/Basic-Regular.ttf"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="@string/login"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/basic_regular"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:text="@string/belum_punya_akun"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/daftar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="130dp"
+                android:layout_marginRight="130dp"
+                android:layout_marginBottom="32dp"
+                android:fontFamily="@font/basic_regular"
+                android:gravity="center"
+                android:text="Daftar"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,36 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="TextLabel" parent="TextAppearance.AppCompat">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">#fff</item>
+        <item name="android:textSize">16sp</item>
+
+        <item name="colorAccent">#fff</item>
+        <item name="colorControlNormal">#fff</item>
+        <item name="colorControlActivated">#fff</item>
+    </style>
+    <style name="nLiveoDrawer" parent="Theme.nLiveo">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#2980b9</item>
+        <item name="colorPrimaryDark">#2980b9</item>
+        <item name="colorAccent">@color/nyobaan</item>
+    </style>
+
+    <!--    Theme for form login register-->
+    <style name="LogRegLabel" parent="TextAppearance.AppCompat">
+        <item name="android:textColorHint">@color/blueFake</item>
+        <item name="android:textSize">16sp</item>
+
+        <item name="colorAccent">@color/blueLight</item>
+        <item name="colorControlNormal">@color/blueFake</item>
+        <item name="colorControlActivated">@color/blueDark</item>
+    </style>
+</resources>

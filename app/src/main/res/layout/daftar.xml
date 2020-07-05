@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/atas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_marginTop="80dp"
+                android:src="@drawable/kota_bandung" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/tengah"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/atas" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tengah"
+            android:layout_alignParentBottom="true"
+            android:gravity="center|bottom"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:theme="@style/LogRegLabel"
+                app:hintAnimationEnabled="false"
+                app:hintEnabled="false">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/nama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:background="@drawable/formlogreg"
+                    android:drawableStart="@drawable/user"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:hint="@string/nama"
+                    android:inputType="text"
+                    android:padding="15dp"
+                    android:textColor="@color/blueDark"
+                    android:textColorHint="@color/blueDark"
+                    android:textSize="14sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:theme="@style/LogRegLabel"
+                app:hintAnimationEnabled="false"
+                app:hintEnabled="false">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:background="@drawable/formlogreg0"
+                    android:drawableStart="@drawable/user"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:hint="@string/username"
+                    android:inputType="text"
+                    android:padding="15dp"
+                    android:textColor="@color/blueDark"
+                    android:textColorHint="@color/blueDark"
+                    android:textSize="14sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:theme="@style/LogRegLabel"
+                app:hintAnimationEnabled="false"
+                app:hintEnabled="false"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/blueDark">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:background="@drawable/formlogreg0"
+                    android:drawableStart="@drawable/lock"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:padding="15dp"
+                    android:textColor="@color/blueDark"
+                    android:textColorHint="@color/blueDark"
+                    android:textSize="14sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:theme="@style/LogRegLabel"
+                app:hintAnimationEnabled="false"
+                app:hintEnabled="false"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/blueDark">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/conf_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:background="@drawable/formlogreg0"
+                    android:drawableStart="@drawable/lock"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:hint="@string/konfirmasi_password"
+                    android:inputType="textPassword"
+                    android:padding="15dp"
+                    android:textColor="@color/blueDark"
+                    android:textColorHint="@color/blueDark"
+                    android:textSize="14sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:theme="@style/LogRegLabel"
+                app:hintAnimationEnabled="false"
+                app:hintEnabled="false">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/alamat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:background="@drawable/formlogreg0"
+                    android:drawableStart="@drawable/location"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:hint="@string/alamat"
+                    android:inputType="textLongMessage"
+                    android:padding="15dp"
+                    android:textColor="@color/blueDark"
+                    android:textColorHint="@color/blueDark"
+                    android:textSize="14sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:theme="@style/LogRegLabel"
+                app:hintAnimationEnabled="false"
+                app:hintEnabled="false">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:background="@drawable/formlogreg2"
+                    android:drawableStart="@drawable/email"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    android:padding="15dp"
+                    android:textColor="@color/blueDark"
+                    android:textColorHint="@color/blueDark"
+                    android:textSize="14sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/signin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="130dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="130dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/btnframe"
+                android:fontFamily="@font/basic_regular"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="@string/register"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/basic_regular"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:text="@string/sudah_punya_akun"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:textStyle="italic" />
+
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/daftar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="130dp"
+                android:layout_marginEnd="130dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/basic_regular"
+                android:gravity="center"
+                android:text="Login"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
+
